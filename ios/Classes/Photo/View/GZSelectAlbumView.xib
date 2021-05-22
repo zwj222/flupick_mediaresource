@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GZSelectAlbumView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1E-Km-C5Q">
+                    <rect key="frame" x="0.0" y="52" width="60" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="fMc-re-cSC"/>
+                        <constraint firstAttribute="height" constant="50" id="kyO-hW-1TU"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="-4" maxX="0.0" maxY="4"/>
+                    <state key="normal" image="发心情-相册-关闭"/>
+                    <connections>
+                        <action selector="popEvents:" destination="iN0-l3-epB" eventType="touchUpInside" id="IXr-7o-DDf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1l-qj-6ca">
+                    <rect key="frame" x="164" y="52" width="86" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="-4" maxX="0.0" maxY="4"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="-4" maxX="0.0" maxY="4"/>
+                    <state key="normal" title="最近项目" image="最近项目">
+                        <color key="titleColor" red="0.18431372549019609" green="0.18431372549019609" blue="0.2196078431372549" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="photoListEvents:" destination="iN0-l3-epB" eventType="touchUpInside" id="WHF-mt-8h6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42j-Bh-oi1">
+                    <rect key="frame" x="138" y="102" width="138" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="视频">
+                        <color key="titleColor" red="0.54117647059999996" green="0.56862745100000001" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="btnEvents:" destination="iN0-l3-epB" eventType="touchUpInside" id="Bfc-1S-fzc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13m-TX-11O">
+                    <rect key="frame" x="276" y="102" width="138" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="照片">
+                        <color key="titleColor" red="0.54117647059999996" green="0.56862745100000001" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="btnEvents:" destination="iN0-l3-epB" eventType="touchUpInside" id="2UW-X6-3vc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9O-bp-E2j">
+                    <rect key="frame" x="0.0" y="102" width="138" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="S46-hn-4Dn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="全部">
+                        <color key="titleColor" red="0.54117647059999996" green="0.56862745100000001" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsImageWhenHighlighted" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnEvents:" destination="iN0-l3-epB" eventType="touchUpInside" id="PGc-oo-d2Y"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hs-Hk-Cd2">
+                    <rect key="frame" x="334" y="52" width="80" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="Wgj-8e-Y3l"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="-4" maxX="0.0" maxY="4"/>
+                    <state key="normal" title="预览/使用">
+                        <color key="titleColor" red="0.98431372549999996" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="nestEvents:" destination="iN0-l3-epB" eventType="touchUpInside" id="MY1-A6-kaW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fZM-et-Ah4"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="42j-Bh-oi1" firstAttribute="leading" secondItem="y9O-bp-E2j" secondAttribute="trailing" id="2HY-Kv-jse"/>
+                <constraint firstItem="y9O-bp-E2j" firstAttribute="leading" secondItem="fZM-et-Ah4" secondAttribute="leading" id="7m8-WY-EiI"/>
+                <constraint firstItem="Y1l-qj-6ca" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9Xo-hD-xCa"/>
+                <constraint firstItem="y9O-bp-E2j" firstAttribute="top" secondItem="f1E-Km-C5Q" secondAttribute="bottom" id="A1T-M1-OdG"/>
+                <constraint firstItem="13m-TX-11O" firstAttribute="top" secondItem="y9O-bp-E2j" secondAttribute="top" id="BWo-1q-1g1"/>
+                <constraint firstItem="13m-TX-11O" firstAttribute="width" secondItem="y9O-bp-E2j" secondAttribute="width" id="BdR-uw-sq9"/>
+                <constraint firstItem="8hs-Hk-Cd2" firstAttribute="bottom" secondItem="Y1l-qj-6ca" secondAttribute="bottom" id="Gbb-WV-Kfh"/>
+                <constraint firstItem="fZM-et-Ah4" firstAttribute="trailing" secondItem="13m-TX-11O" secondAttribute="trailing" id="L90-H4-Gap"/>
+                <constraint firstItem="13m-TX-11O" firstAttribute="bottom" secondItem="y9O-bp-E2j" secondAttribute="bottom" id="LCv-nQ-g03"/>
+                <constraint firstItem="Y1l-qj-6ca" firstAttribute="top" secondItem="fZM-et-Ah4" secondAttribute="top" constant="8" id="LKh-wy-Nuc"/>
+                <constraint firstItem="42j-Bh-oi1" firstAttribute="width" secondItem="y9O-bp-E2j" secondAttribute="width" id="LwA-As-nwV"/>
+                <constraint firstItem="42j-Bh-oi1" firstAttribute="top" secondItem="y9O-bp-E2j" secondAttribute="top" id="OWn-EX-LXE"/>
+                <constraint firstItem="fZM-et-Ah4" firstAttribute="trailing" secondItem="8hs-Hk-Cd2" secondAttribute="trailing" id="Pw2-67-JN1"/>
+                <constraint firstItem="Y1l-qj-6ca" firstAttribute="bottom" secondItem="f1E-Km-C5Q" secondAttribute="bottom" id="Zha-0W-2Se"/>
+                <constraint firstItem="f1E-Km-C5Q" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="asr-bU-hAf"/>
+                <constraint firstItem="13m-TX-11O" firstAttribute="leading" secondItem="42j-Bh-oi1" secondAttribute="trailing" id="en3-Ip-pVC"/>
+                <constraint firstItem="42j-Bh-oi1" firstAttribute="bottom" secondItem="y9O-bp-E2j" secondAttribute="bottom" id="g6L-Pb-Ypr"/>
+                <constraint firstItem="Y1l-qj-6ca" firstAttribute="top" secondItem="f1E-Km-C5Q" secondAttribute="top" id="jAq-iK-vtI"/>
+                <constraint firstItem="8hs-Hk-Cd2" firstAttribute="top" secondItem="Y1l-qj-6ca" secondAttribute="top" id="jRW-zE-JqP"/>
+                <constraint firstItem="42j-Bh-oi1" firstAttribute="leading" secondItem="y9O-bp-E2j" secondAttribute="trailing" id="qS2-Pc-PRu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="albumBtn" destination="13m-TX-11O" id="0OH-wD-StD"/>
+                <outlet property="allBtn" destination="y9O-bp-E2j" id="oYQ-f0-DuQ"/>
+                <outlet property="allListBtn" destination="Y1l-qj-6ca" id="Lrl-7U-v0Q"/>
+                <outlet property="backBtn" destination="f1E-Km-C5Q" id="K0Y-Vy-zrP"/>
+                <outlet property="videoBtn" destination="42j-Bh-oi1" id="I7J-hb-IMo"/>
+            </connections>
+            <point key="canvasLocation" x="127.53623188405798" y="56.919642857142854"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="发心情-相册-关闭" width="24" height="24"/>
+        <image name="最近项目" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

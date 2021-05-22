@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GZSelectVideoView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UpU-vz-oXP">
+                    <rect key="frame" x="0.0" y="44" width="414" height="36"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Jq-Mv-GXF">
+                            <rect key="frame" x="15" y="0.0" width="36" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="36" id="Cug-qS-5bc"/>
+                                <constraint firstAttribute="height" constant="36" id="Jkd-I9-AhH"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="-4" maxX="0.0" maxY="4"/>
+                            <state key="normal" image="发心情-相册-关闭"/>
+                            <connections>
+                                <action selector="popVC:" destination="iN0-l3-epB" eventType="touchUpInside" id="9CW-Ow-LQy"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Vg-2R-hE2">
+                            <rect key="frame" x="297" y="0.0" width="36" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="36" id="MO1-YA-VuR"/>
+                                <constraint firstAttribute="height" constant="36" id="hD9-oR-oVR"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="-4" maxX="0.0" maxY="4"/>
+                            <state key="normal" image="闪光灯开启状态"/>
+                            <connections>
+                                <action selector="flashTagger:" destination="iN0-l3-epB" eventType="touchUpInside" id="6mm-Sj-dXy"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="od0-Kc-cTp">
+                            <rect key="frame" x="363" y="0.0" width="36" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="dlH-EL-7Jt"/>
+                                <constraint firstAttribute="width" constant="36" id="ppE-w8-mE4"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="-4" maxX="0.0" maxY="4"/>
+                            <state key="normal" image="相机反转"/>
+                            <connections>
+                                <action selector="cameraTagger:" destination="iN0-l3-epB" eventType="touchUpInside" id="SAM-cO-Ecw"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="od0-Kc-cTp" firstAttribute="top" secondItem="4Jq-Mv-GXF" secondAttribute="top" id="1de-3q-OfH"/>
+                        <constraint firstItem="1Vg-2R-hE2" firstAttribute="top" secondItem="4Jq-Mv-GXF" secondAttribute="top" id="29l-ae-K5K"/>
+                        <constraint firstAttribute="bottom" secondItem="1Vg-2R-hE2" secondAttribute="bottom" id="41U-QM-8UZ"/>
+                        <constraint firstItem="4Jq-Mv-GXF" firstAttribute="top" secondItem="UpU-vz-oXP" secondAttribute="top" id="8VU-RN-9k9"/>
+                        <constraint firstAttribute="bottom" secondItem="od0-Kc-cTp" secondAttribute="bottom" id="H2u-dF-WLD"/>
+                        <constraint firstItem="od0-Kc-cTp" firstAttribute="leading" secondItem="1Vg-2R-hE2" secondAttribute="trailing" constant="30" id="JKf-hy-SIP"/>
+                        <constraint firstAttribute="height" constant="36" id="OF9-pk-Zg1"/>
+                        <constraint firstItem="4Jq-Mv-GXF" firstAttribute="leading" secondItem="UpU-vz-oXP" secondAttribute="leading" constant="15" id="YXi-j2-9KQ"/>
+                        <constraint firstItem="1Vg-2R-hE2" firstAttribute="bottom" secondItem="4Jq-Mv-GXF" secondAttribute="bottom" id="lvH-aY-jtq"/>
+                        <constraint firstAttribute="trailing" secondItem="od0-Kc-cTp" secondAttribute="trailing" constant="15" id="uvs-ye-G7c"/>
+                        <constraint firstItem="od0-Kc-cTp" firstAttribute="bottom" secondItem="4Jq-Mv-GXF" secondAttribute="bottom" id="wE6-D3-UwL"/>
+                        <constraint firstAttribute="bottom" secondItem="4Jq-Mv-GXF" secondAttribute="bottom" id="yxz-EE-6ja"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="UpU-vz-oXP" secondAttribute="trailing" id="llB-HO-PPR"/>
+                <constraint firstItem="UpU-vz-oXP" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="na4-vj-wWS"/>
+                <constraint firstItem="UpU-vz-oXP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="xYa-LB-HN4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="closeBtn" destination="4Jq-Mv-GXF" id="ZTa-6O-t9m"/>
+                <outlet property="flashBtn" destination="1Vg-2R-hE2" id="KPp-dl-INf"/>
+                <outlet property="taggerCameraBtn" destination="od0-Kc-cTp" id="ocY-LZ-sWJ"/>
+                <outlet property="topView" destination="UpU-vz-oXP" id="hMW-Ig-2dl"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="90.401785714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="发心情-相册-关闭" width="24" height="24"/>
+        <image name="相机反转" width="24" height="24"/>
+        <image name="闪光灯开启状态" width="24" height="24"/>
+    </resources>
+</document>
